@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Validation Rendez-vous</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding-end ion-padding-horizontal" color="primary">
+  <ion-list  class="ion-padding-end ion-margin-top">
+    <ion-item>
+      <ion-select label="Selectionnez une option" placeholder="C'est qui?">
+        <ion-select-option value="apple">20-01-2023</ion-select-option>
+        <ion-select-option value="apple">20-01-2023</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="Selectionnez une option" placeholder="Genre">
+        <ion-select-option value="apple">Masculin</ion-select-option>
+        <ion-select-option value="apple">Féminin</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="Selectionnez votre age" placeholder="Age">
+        <ion-select-option value="apple">5 ans</ion-select-option>
+        <ion-select-option value="apple">6 ans</ion-select-option>
+        <ion-select-option value="apple">7 ans</ion-select-option>
+        <ion-select-option value="apple">8 ans</ion-select-option>
+        <ion-select-option value="apple">9 ans</ion-select-option>
+        <ion-select-option value="apple">10 ans</ion-select-option>
+        <ion-select-option value="apple">11 ans</ion-select-option>
+        <ion-select-option value="apple">12 ans</ion-select-option>
+        <ion-select-option value="apple">13 ans</ion-select-option>
+        <ion-select-option value="apple">14 ans</ion-select-option>
+        <ion-select-option value="apple">15 ans</ion-select-option>
+        <ion-select-option value="apple">16 ans</ion-select-option>
+        <ion-select-option value="apple">17 ans</ion-select-option>
+        <ion-select-option value="apple">18 ans</ion-select-option>
+        <ion-select-option value="apple">19 ans</ion-select-option>
+        <ion-select-option value="apple">20 ans</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-textarea placeholder="Saississez votre problème..."></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-button type="submit" (click)="goToAcceuil()" expand="block" shape="round" color="warning" class="ion-margin-top ion-padding-end theme-warning">Rendez-vous</ion-button>
+</ion-content>

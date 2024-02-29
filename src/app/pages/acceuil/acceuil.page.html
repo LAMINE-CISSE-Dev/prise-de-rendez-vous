@@ -1,0 +1,67 @@
+é"r'"'<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-row class="ion-text-center">
+      <ion-col>
+       <h4  color="primary">Rendez-vous</h4>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="goToLogin()" color="primary">Deconnexion</ion-button>
+       </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="primary">
+ <ion-grid>
+  <ion-row  class="ion-padding-end ion-padding-horizontal">
+    <ion-col>
+      <ion-searchbar show-clear-button="always" clear-icon="trash-bin" value="recherche..."></ion-searchbar>
+       <h2 >Specialités de nos Médecins</h2>
+       <p>Au cœur de notre engagement envers la santé, nous sommes fiers de vous présenter nos médecins spécialisés, véritables artisans de l'équité médicale.</p>
+      <swiper-container >
+        <swiper-slide>  
+          <ion-row>
+            <ion-col>
+               <img src="../../assets/images/derm.png" alt="logo de notre app" width="500" height="150">
+            </ion-col>
+            <ion-col>
+              <img src="../../assets/images/oph.png" alt="logo de notre app" width="500" height="150">
+           </ion-col>
+          </ion-row>
+        </swiper-slide>
+        <swiper-slide> 
+          <ion-row>
+            <ion-col>
+               <img src="../../assets/images/dent.png" alt="logo de notre app" width="500" height="150">
+            </ion-col>
+            <ion-col>
+              <img src="../../assets/images/card.png" alt="logo de notre app" width="500" height="150">
+           </ion-col>
+          </ion-row>
+        </swiper-slide>
+      </swiper-container>
+
+      <ion-card  class="ion-text-center" *ngFor="let docteur of docteurs$|async">
+        <img alt="Silhouette of mountains" [src]="docteur.imageUrl" width="100%" height="300"/>
+        <ion-card-header>
+          <ion-card-title><ion-icon name="person" color="primary"></ion-icon> {{docteur.name}}</ion-card-title>
+          <ion-card-subtitle><ion-icon name="bag" color="primary"></ion-icon> {{docteur.profession}}</ion-card-subtitle>
+          <ion-card-subtitle><ion-icon name="location" color="primary"></ion-icon> {{docteur.location}}</ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+
+     </ion-col>
+  </ion-row>
+    <ion-col class="ion-text-center">
+
+     </ion-col>
+     
+
+ <ion-row>
+  <ion-col class="ion-text-center">
+    
+  </ion-col>
+</ion-row>
+
+</ion-grid>
+</ion-content>

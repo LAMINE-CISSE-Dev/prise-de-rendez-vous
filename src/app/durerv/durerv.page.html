@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Duree Rendez-vous</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding-end ion-padding-horizontal" color="primary">
+  <ion-grid>
+    <ion-col class="ion-text-center" >
+      <h1>Durée du Rendez-vous</h1>
+    </ion-col>
+    <ion-col class="ion-text-center">
+      <p>Choisissez la durée qui convient le mieux à vos besoins pour votre rendez-vous. Veuillez sélectionner une option parmi les suivantes:</p>
+  </ion-col>
+</ion-grid>
+  <ion-list  class="ion-padding-end ion-margin-top">
+    <ion-item>
+      <ion-select label="Selectionnez une option" placeholder="Mode de Consultation">
+        <ion-select-option value="applej">Audio</ion-select-option>
+        <ion-select-option value="APPLEh">Appel</ion-select-option>
+        <ion-select-option value="applem">Appel Vidéo</ion-select-option>
+        <ion-select-option value="APPLEc">Présentiel</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+    
+    <ion-item>
+      <ion-select label="Selectionnez le prix" placeholder="le Prix de Consultation">
+        <ion-select-option value="appleMa">1000fr</ion-select-option>
+        <ion-select-option value="appleFo">2000fr</ion-select-option>
+        <ion-select-option value="appleMn">3000fr</ion-select-option>
+        <ion-select-option value="appleFl">4000fr</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="Selectionnez la durée" placeholder="Durée de Consultation">
+        <ion-select-option value="apple1">10 min</ion-select-option>
+        <ion-select-option value="apple2">20 min</ion-select-option>
+        <ion-select-option value="apple3">30 min</ion-select-option>
+        <ion-select-option value="apple4">1h00</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-button type="submit" (click)="goToPayer()" expand="block" shape="round" color="warning" class="ion-margin-top ion-padding-end theme-warning">Rendez-vous</ion-button>
+</ion-content>

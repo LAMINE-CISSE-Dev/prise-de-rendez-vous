@@ -1,0 +1,44 @@
+<ion-content class="theme-gray">
+  <ion-grid class="d-flex ion-align-items-center ion-justify-content-center w-100 h-100">
+    <ion-card>
+     <ion-row>
+       <ion-col class="ion-text-center ion-margin-top">
+         <img src="../../assets/images/rendez-vous.png" alt="logo de notre app" width="120">
+       </ion-col>
+  </ion-row>
+  <ion-card-header>
+    <ion-card-title class="ion-text-center theme-warning">Incription</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+   <ion-row>
+     <ion-col>
+       <form action="" [formGroup]="form" submit="onSubmit()">
+         <ion-list>
+           <ion-item fill="outline" class="ion-margin-top">
+             <!-- <ion-label position="floating">Nom Complet</ion-label> -->
+             <ion-input name="username" 
+             placeholder="Entrer votre nom complet"
+              [clearInput]="true" formControlName="firstname"></ion-input>
+           </ion-item>
+           <ion-item fill="outline" class="ion-margin-top">
+            <!-- <ion-label position="floating">Adresse Email</ion-label> -->
+            <ion-input name="email" placeholder="exemple@gmail.com" formControlName="email"></ion-input>
+          </ion-item>
+           <ion-item fill="outline" class="ion-margin-top">
+             <!-- <ion-label position="floating">Mot de passe</ion-label> -->
+             <ion-input name="password" placeholder="Entrer votre mot de passe" type="password" formControlName="password"></ion-input>
+           </ion-item>
+           <ion-item fill="outline" class="ion-margin-top">
+            <!-- <ion-label position="floating">Confirme le mot de passe</ion-label> -->
+            <ion-input name="password" placeholder="Confirmez le mot de passe" type="password" formControlName="password"></ion-input>
+          </ion-item>
+             <ion-button type="submit" [disabled]="form.invalid" (click)="goToLogin()" expand="block" shape="round" color="warning" class="ion-margin-top theme-warning">S'inscrire</ion-button>
+         </ion-list>
+       </form>
+     </ion-col>
+    </ion-row>
+  </ion-card-content>
+    </ion-card>
+  </ion-grid>
+ </ion-content>
+  

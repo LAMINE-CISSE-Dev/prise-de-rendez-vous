@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Reservation</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding-horizontal" color="primary">
+  <ion-grid>
+    <ion-col class="ion-text-center" >
+      <h1> Prenez rendez-vous</h1>
+    </ion-col>
+    <ion-col class="ion-text-center">
+    <p>Bienvenue sur notre système de prise de rendez-vous. Veuillez remplir le formulaire ci-dessous pour prendre rendez-vous.</p>
+  </ion-col>
+</ion-grid>
+
+<ion-list class="ion-padding-end">
+  <ion-item>
+    <ion-select label="Selectionnez un jour" placeholder="Dates">
+      <ion-select-option value="date1">20-01-2023</ion-select-option>
+      <ion-select-option value="date2">20-01-2023</ion-select-option>
+      <ion-select-option value="date3">20-01-2023</ion-select-option>
+      <ion-select-option value="date4">20-01-2023</ion-select-option>
+      <ion-select-option value="date5">20-01-2023</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-select label="Selectionnez l'heure" placeholder="Heures">
+      <ion-select-option value="heures1">10:00</ion-select-option>
+      <ion-select-option value="heures2">10:30</ion-select-option>
+      <ion-select-option value="heures3">11:00</ion-select-option>
+      <ion-select-option value="heures4">10:30</ion-select-option>
+      <ion-select-option value="heures5">12:00</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>  
+<ion-button type="submit" (click)="goToInfo()" expand="block" shape="round" color="warning" class="ion-margin-top theme-warning">Rendez-vous</ion-button>
+
+</ion-content>

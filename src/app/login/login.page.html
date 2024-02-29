@@ -1,0 +1,35 @@
+<ion-content class="theme-gray">
+ <ion-grid class="d-flex ion-align-items-center ion-justify-content-center w-100 h-100" style="height: 100%">
+   <ion-card>
+    <ion-row>
+      <ion-col class="ion-text-center ion-margin-top">
+        <img src="../../assets/images/rendez-vous.png" alt="logo de notre app" width="120">
+      </ion-col>
+ </ion-row>
+ <ion-card-header>
+   <ion-card-title class="ion-text-center theme-warning">Se connecter</ion-card-title>
+ </ion-card-header>
+ <ion-card-content>
+  <ion-row class="">
+    <ion-col>
+      <form action="">
+        <ion-list>
+          <ion-item fill="outline" class="ion-margin-top">
+            
+            <ion-input name="email" 
+            placeholder="exemple@gmail.com"
+             [clearInput]="true"></ion-input>
+          </ion-item>
+          <ion-item fill="outline" class="ion-margin-top">
+            <ion-input name="password" placeholder="Entrer votre mot de passe" type="password"></ion-input>
+          </ion-item>
+            <ion-button class="ion-color-light" (click)="goToHome()" href="/home" expand="block" shape="round" color="danger" class="ion-margin-top">Se connecter</ion-button>
+            <p class="ion-text-wrap" style="max-width: 300px">si vous n'avez pas de compte, <a (click)="goToInscription()">inscrivez-vous</a></p>
+        </ion-list>
+      </form>
+    </ion-col>
+   </ion-row>
+ </ion-card-content>
+   </ion-card>
+ </ion-grid>
+</ion-content>

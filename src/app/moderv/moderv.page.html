@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Reservation</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding-end ion-padding-horizontal" color="primary">
+  <ion-grid>
+    <ion-col class="ion-text-center" >
+      <h1> Prenez rendez-vous</h1>
+    </ion-col>
+    <ion-col class="ion-text-center">
+      <p class="ion-padding-end ion-padding-horizontal">Veuillez prendre quelques instants pour remplir les informations requises ci-dessous afin que nous puissions mieux vous assister.</p>
+  </ion-col>
+</ion-grid>
+  <ion-list  class="ion-padding-end ion-margin-top">
+    <ion-item>
+      <ion-select label="Selectionnez une option" placeholder="C'est qui?">
+        <ion-select-option value="APPLE">Moi</ion-select-option>
+        <ion-select-option value="apple">Un autre</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+    
+    <ion-item>
+      <ion-select label="Selectionnez une option" placeholder="Genre">
+        <ion-select-option value="appleM">Masculin</ion-select-option>
+        <ion-select-option value="appleF">Féminin</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-select label="Selectionnez votre age" placeholder="Age">
+        <ion-select-option value="apple1">5 ans</ion-select-option>
+        <ion-select-option value="apple2">6 ans</ion-select-option>
+        <ion-select-option value="apple3">7 ans</ion-select-option>
+        <ion-select-option value="apple4">8 ans</ion-select-option>
+        <ion-select-option value="apple5">9 ans</ion-select-option>
+        <ion-select-option value="apple6">10 ans</ion-select-option>
+        <ion-select-option value="apple7">11 ans</ion-select-option>
+        <ion-select-option value="apple8">12 ans</ion-select-option>
+        <ion-select-option value="apple9">13 ans</ion-select-option>
+        <ion-select-option value="apple10">14 ans</ion-select-option>
+        <ion-select-option value="apple11">15 ans</ion-select-option>
+        <ion-select-option value="apple12">16 ans</ion-select-option>
+        <ion-select-option value="apple13">17 ans</ion-select-option>
+        <ion-select-option value="apple14">18 ans</ion-select-option>
+        <ion-select-option value="apple15">19 ans</ion-select-option>
+        <ion-select-option value="apple16">20 ans</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-textarea placeholder="Saississez votre problème..."></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-button type="submit" (click)="goToDuree()" expand="block" shape="round" color="warning" class="ion-margin-top ion-padding-end theme-warning">Rendez-vous</ion-button>
+</ion-content>
